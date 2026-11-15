@@ -1,0 +1,93 @@
+{
+  "n_train": 5499,
+  "n_val": 537,
+  "n_test": 935,
+  "validation": {
+    "Always home": {
+      "accuracy": 0.5456238361266295
+    },
+    "Logistic regression": {
+      "accuracy": 0.6219739292364991,
+      "precision": 0.6229508196721312,
+      "recall": 0.7781569965870307,
+      "f1": 0.6919575113808801,
+      "auc": 0.6789430985285068
+    },
+    "Random forest": {
+      "accuracy": 0.62756052141527,
+      "precision": 0.624,
+      "recall": 0.7986348122866894,
+      "f1": 0.7005988023952096,
+      "auc": 0.6685922900464387
+    },
+    "Gradient boosting": {
+      "accuracy": 0.6256983240223464,
+      "precision": 0.6256830601092896,
+      "recall": 0.7815699658703071,
+      "f1": 0.6949924127465857,
+      "auc": 0.6802369495887652
+    },
+    "Vegas spread": {
+      "accuracy": 0.6480446927374302,
+      "n": 537
+    }
+  },
+  "test": {
+    "Always home": {
+      "accuracy": 0.5368983957219251
+    },
+    "Logistic regression": {
+      "accuracy": 0.6288770053475936,
+      "precision": 0.628099173553719,
+      "recall": 0.7569721115537849,
+      "f1": 0.6865401987353207,
+      "auc": 0.6939677778493417
+    },
+    "Random forest": {
+      "accuracy": 0.6502673796791444,
+      "precision": 0.6395534290271132,
+      "recall": 0.798804780876494,
+      "f1": 0.7103631532329495,
+      "auc": 0.693475520550592
+    },
+    "Gradient boosting": {
+      "accuracy": 0.6438502673796791,
+      "precision": 0.6356340288924559,
+      "recall": 0.7888446215139442,
+      "f1": 0.704,
+      "auc": 0.6980553536431641
+    },
+    "Vegas spread": {
+      "accuracy": 0.6759358288770053,
+      "n": 935
+    }
+  },
+  "mcnemar_vs_vegas": {
+    "Logistic regression": {
+      "model_only_right": 51,
+      "vegas_only_right": 95,
+      "p_value": 0.0003394484300037483
+    },
+    "Random forest": {
+      "model_only_right": 70,
+      "vegas_only_right": 94,
+      "p_value": 0.07217098590572892
+    },
+    "Gradient boosting": {
+      "model_only_right": 64,
+      "vegas_only_right": 94,
+      "p_value": 0.020753739167753815
+    }
+  },
+  "best_model": "Random forest",
+  "confusion_matrix_best": [
+    [
+      207,
+      226
+    ],
+    [
+      101,
+      401
+    ]
+  ]
+}

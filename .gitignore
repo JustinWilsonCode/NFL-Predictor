@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+PDS_project format.pdf
+make_report.py
+Project_Update_Report.pdf
